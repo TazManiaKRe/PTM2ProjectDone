@@ -17,7 +17,6 @@ public class Hybrid implements TimeSeriesAnomalyDetector
     private Random rand = new Random();
     protected TimeSeries ts;
 
-
     @Override
     public void learnNormal(TimeSeries ts) {
         this.ts = ts;
@@ -158,7 +157,6 @@ public class Hybrid implements TimeSeriesAnomalyDetector
         });
         return resultList;
     }
-
 
     public Circle findMinimumCircle(final List<Point> points) {
         return WelezAlgo(points, new ArrayList<Point>());
