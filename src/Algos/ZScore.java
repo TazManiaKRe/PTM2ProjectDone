@@ -27,7 +27,7 @@ public class ZScore implements TimeSeriesAnomalyDetector {
                 for (int j = 0; j < i; j++) {
                     double zScore;
                     if (temp != 0 ) {
-                        zScore = Math.abs( f.getSam().get(j) - avgx) / temp;
+                        zScore = Math.abs(f.getSam().get(j)-avgx)/temp;
                     }
                     else {
                         zScore = 0;
@@ -41,6 +41,7 @@ public class ZScore implements TimeSeriesAnomalyDetector {
             max = -1;
         }
     }
+
     @Override
     public List<AnomalyReport> detect(TimeSeries ts) {
         ArrayList<AnomalyReport> hf = new ArrayList<AnomalyReport>();
@@ -51,7 +52,7 @@ public class ZScore implements TimeSeriesAnomalyDetector {
                 double temp =  Math.sqrt(StatLib.var(StatLib.al(f.getSam().subList(0, j))));
                 if (temp != 0 ) {
                     for (int k = 0; k < j; k++) {
-                        double z_score = Math.abs( f.getSam().get(k) - avgx) / temp;
+                        double z_score = Math.abs(f.getSam().get(k)-avgx)/temp;
                         if (z_score > this.hf.get(i)) {
                             AnomalyReport ar = new AnomalyReport(f.getId(), k+1);
                             if (!StatLib.isgood(hf, ar)) {hf.add(ar);}
