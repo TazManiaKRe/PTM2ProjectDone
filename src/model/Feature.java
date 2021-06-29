@@ -11,8 +11,6 @@ public class Feature{
 	public String getId() {return id;}
 	
 	protected void setId(String id) {this.id = id;}
-	
-
 
 	public void add_sample(Float sam) {
 		this.sam.add(sam);
@@ -28,7 +26,9 @@ public class Feature{
 
 	public ArrayList<Float> getSam() {return sam;}
 
-	public void setSam(ArrayList<Float> sam) {this.sam = sam;}
+	public void setSam(ArrayList<Float> sam) {
+		this.sam = sam;
+	}
 
 	public String getName() {return name;}
 
