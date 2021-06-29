@@ -5,7 +5,7 @@
    <object class="java.util.ArrayList">
     <void method="add">
      <object class="model.FeatureSettings">
-      <void property="assosicate_name">
+      <void property="assosiate">
        <string>aileron</string>
       </void>
       <void property="max">
@@ -21,7 +21,7 @@
     </void>
     <void method="add">
      <object class="model.FeatureSettings">
-      <void property="assosicate_name">
+      <void property="assosiate">
        <string>elevator</string>
       </void>
       <void property="max">
@@ -37,7 +37,7 @@
     </void>
     <void method="add">
      <object class="model.FeatureSettings">
-      <void property="assosicate_name">
+      <void property="assosiate">
        <string>rudder</string>
       </void>
       <void property="max">
@@ -53,7 +53,7 @@
     </void>
     <void method="add">
      <object class="model.FeatureSettings">
-      <void property="assosicate_name">
+      <void property="assosiate">
        <string>throttle</string>
       </void>
       <void property="max">
@@ -69,7 +69,7 @@
     </void>
     <void method="add">
      <object class="model.FeatureSettings">
-      <void property="assosicate_name">
+      <void property="assosiate">
        <string>altimeter_indicated-altitude-ft</string>
       </void>
       <void property="max">
@@ -85,7 +85,7 @@
     </void>
     <void method="add">
      <object class="model.FeatureSettings">
-      <void property="assosicate_name">
+      <void property="assosiate">
        <string>airspeed-indicator_indicated-speed-kt</string>
       </void>
       <void property="max">
@@ -101,7 +101,7 @@
     </void>
     <void method="add">
      <object class="model.FeatureSettings">
-      <void property="assosicate_name">
+      <void property="assosiate">
        <string>indicated-heading-deg</string>
       </void>
       <void property="max">
@@ -117,7 +117,7 @@
     </void>
     <void method="add">
      <object class="model.FeatureSettings">
-      <void property="assosicate_name">
+      <void property="assosiate">
        <string>attitude-indicator_internal-roll-deg</string>
       </void>
       <void property="max">
@@ -133,7 +133,7 @@
     </void>
     <void method="add">
      <object class="model.FeatureSettings">
-      <void property="assosicate_name">
+      <void property="assosiate">
        <string>attitude-indicator_internal-pitch-deg</string>
       </void>
       <void property="max">
@@ -149,7 +149,7 @@
     </void>
     <void method="add">
      <object class="model.FeatureSettings">
-      <void property="assosicate_name">
+      <void property="assosiate">
        <string>side-slip-deg</string>
       </void>
       <void property="max">

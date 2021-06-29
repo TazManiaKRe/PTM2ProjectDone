@@ -17,7 +17,7 @@
    <var_separator>,</var_separator>
 
 
-   <!-- Flight Controls -->
+   <!-- Flight Controls  -->
    <chunk>
     <name>aileron</name>
     <type>float</type>

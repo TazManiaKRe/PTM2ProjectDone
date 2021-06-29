@@ -290,7 +290,7 @@ public class ViewModel implements Observer
 		else {
 			Alert a = new Alert(AlertType.ERROR);
 			a.setHeaderText("no good class");
-			a.setContentText("please upload Test Csv before upload Anomaly Algo Class");
+			a.setContentText("test before");
 			a.showAndWait();
 		}
 	}
@@ -312,8 +312,8 @@ public class ViewModel implements Observer
 		} catch (Exception e) {
 			algoName.set("");
 			Alert a = new Alert(AlertType.ERROR);
-			a.setHeaderText("Algo load Failed");
-			a.setContentText("unable to load this algorithm please try again");
+			a.setHeaderText("load fail");
+			a.setContentText("try again");
 			a.showAndWait();
 			this.ad = null;
 		}
