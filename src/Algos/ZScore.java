@@ -41,9 +41,6 @@ public class ZScore implements TimeSeriesAnomalyDetector {
             max = -1;
         }
     }
-
-
-
     @Override
     public List<AnomalyReport> detect(TimeSeries ts) {
         ArrayList<AnomalyReport> hf = new ArrayList<AnomalyReport>();
@@ -63,7 +60,6 @@ public class ZScore implements TimeSeriesAnomalyDetector {
                 }
             }
         }
-
         return hf;
     }
 
@@ -85,7 +81,6 @@ public class ZScore implements TimeSeriesAnomalyDetector {
         s.getData().add(new XYChart.Data(max,threshold));
         return s;
     }
-
 
     @Override
     public String getName() { return "Zscore";}

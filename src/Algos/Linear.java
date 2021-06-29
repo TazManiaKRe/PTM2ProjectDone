@@ -1,4 +1,3 @@
-
 package Algos;
 
 import Algos.AnomalyReport;
@@ -42,7 +41,6 @@ public class Linear implements TimeSeriesAnomalyDetector {
         }
         return arl;
     }
-
 
     public void learnNormal(TimeSeries ts) {
         this.ts=ts;

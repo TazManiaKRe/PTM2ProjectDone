@@ -193,11 +193,6 @@ public class Hybrid implements TimeSeriesAnomalyDetector
 
         return minimumCircle;
     }
-
-
-
-
-
     @Override
     public String getName() { return "Hybrid";}
 
