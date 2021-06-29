@@ -108,7 +108,6 @@ public class ViewModel implements Observer
 	public TimeSeriesAnomalyDetector getAd() {return ad;}
 
 
-
 	public void setDisplayVar(HashMap<String, SimpleDoubleProperty> displayVar) {DisplayVar = displayVar;}
 	public void setRate(double rate) {this.rate.set(rate);}
 	public void setAlgoName(StringProperty algoName) {this.algoName = algoName;}
@@ -119,7 +118,6 @@ public class ViewModel implements Observer
 	public void setAd(TimeSeriesAnomalyDetector ad) {this.ad = ad;}
 
 
-
 	public String toStringTime(Double object) {
         long seconds = object.longValue();
         long minutes = TimeUnit.SECONDS.toMinutes(seconds);
@@ -127,7 +125,6 @@ public class ViewModel implements Observer
         return String.format("%02d", minutes) + ":" + String.format("%02d", remainingseconds);
     }
 	
-
 
 	@Override
 	public void update(Observable o, Object arg) {
