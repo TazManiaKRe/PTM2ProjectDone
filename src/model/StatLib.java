@@ -38,6 +38,7 @@ public class StatLib {
 	}
 
 
+
 	public static float cov(float[] x, float[] y){
 		float avgx = avg(x);
 		float  avgy = avg(y);
@@ -49,6 +50,8 @@ public class StatLib {
 		return sum/x.length;
 	}
 
+
+
 	public static float pearson(float[] x, float[] y){
 		float covxy = cov(x, y);
 		float varx = var(x);
@@ -58,6 +61,7 @@ public class StatLib {
 		
 		return (float) (covxy / (s1 * s2));
 	}
+
 
 
 	public static Line linear_reg(Point[] points){
@@ -79,6 +83,7 @@ public class StatLib {
 		
 		return l;
 	}
+
 
 
 	public static float dev(Point p,Point[] points){
@@ -116,6 +121,7 @@ public class StatLib {
 		}
 		return new IfGood(mfl, noMatch);
 	}
+
 
 	public static boolean isgood(ArrayList<AnomalyReport> arl, AnomalyReport ar) {
 		for (AnomalyReport anomalyReport : arl) {
