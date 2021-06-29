@@ -38,9 +38,7 @@ public class Model extends Observable {
 	protected XmlSettings ClientSettings;
 	protected TimeSeries Train = null;
 	protected TimeSeries te = null;
-	
 
-	
 	public Model(IntegerProperty time,DoubleProperty ra) {
 		this.timee =time;
 		this.rate=(int) (100/ra.doubleValue());
@@ -96,8 +94,8 @@ public class Model extends Observable {
 		}
 	}
 	public void forward() {
-		if(te !=null && timee.get()+20<= te.NumOfRows)
-			timee.set(timee.get()+20);
+		if(te !=null && timee.get()+ 20<= te.NumOfRows)
+			timee.set(timee.get()+ 20);
 	}
 
 	public void pause() {
@@ -125,7 +123,6 @@ public class Model extends Observable {
 	}
 	
 
-	
 	public void setRate(double rate) { this.rate=(int) (100/rate);}
 	public int getRate() {return this.rate;}
 	
@@ -154,13 +151,9 @@ public class Model extends Observable {
 	public double getSpeed() {return speed;}
 	public boolean getIsFlightStart() {return flightStart;}
 
-
-
 	public double getRoll() {return roll;}
 	public double getHeigth() {return height;}
 	public XmlSettings getClientSettings() {return ClientSettings;}
-	
-
 	
 
 
