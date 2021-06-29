@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="574.0" prefWidth="634.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="view.graphs.GraphsController">
+         <children>
+            <LineChart fx:id="CorrelatedChart" layoutX="301.0" layoutY="41.0" prefHeight="226.0" prefWidth="310.0">
+              <xAxis>
+                <NumberAxis fx:id="CorxAxis" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="CoryAxis" side="LEFT" />
+              </yAxis>
+            </LineChart>
+            <LineChart fx:id="FeatureChart" layoutY="41.0" prefHeight="226.0" prefWidth="310.0">
+               <xAxis>
+                  <NumberAxis fx:id="FchartX" side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis fx:id="FchartY" side="LEFT" />
+               </yAxis>
+            </LineChart>
+      <LineChart fx:id="algoChart" layoutX="154.0" layoutY="273.0" prefHeight="326.0" prefWidth="330.0">
+        <xAxis>
+          <NumberAxis fx:id="algoAxisX" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="algoAxisY" side="LEFT" />
+        </yAxis>
+      </LineChart>
+         </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.default-color0.chart-series-line { -fx-stroke: black; }
+.default-color1.chart-series-line { -fx-stroke: transparent; }
+.default-color2.chart-series-line { -fx-stroke: transparent; }
+.default-color3.chart-series-line { -fx-stroke: transparent; }
+
+
+/*change*/
+.default-color1.chart-line-symbol {
+    -fx-background-color: #9a7878,grey;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-shape: "M5,0 L10,8 L0,8 Z";
+}
+
+.default-color3.chart-line-symbol {
+    -fx-background-color: #2f0303;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-shape: "M2,0 L5,4 L8,0 L10,0 L10,2 L6,5 L10,8 L10,10 L8,10 L5,6 L2,10 L0,10 L0,8 L4,5 L0,2 L0,0 Z";
+}
+.default-color2.chart-line-symbol {
+    -fx-background-color: blue, #395e3d;
+}
+
+
+.default-color0.chart-line-symbol {
+    -fx-background-color: transparent,transparent;
+}
+.default-color1.chart-legend-item-symbol{
+    -fx-background-color: gray;
+}
+.default-color0.chart-legend-item-symbol{
+    -fx-background-color: black,black;
+}
+.default-color2.chart-legend-item-symbol{
+    -fx-background-color: blue;
+}
+.default-color3.chart-legend-item-symbol{
+    -fx-background-color: red,red;
+}
+
+
+
