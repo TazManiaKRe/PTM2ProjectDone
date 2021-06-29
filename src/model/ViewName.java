@@ -9,7 +9,9 @@ import java.util.Scanner;
 public class ViewName {
 
     public ArrayList<String> Load(String pa){
+
         Scanner s;
+
         try {
             s = new Scanner(new BufferedReader(new FileReader(pa)));
             ArrayList<String> n=new ArrayList<String>();
@@ -17,9 +19,11 @@ public class ViewName {
                 String string = (String) s.next();
                 n.add(string);
             }
+
             s.close();
             return n;
         } catch (FileNotFoundException e) {}
+
 
         return null;
 
